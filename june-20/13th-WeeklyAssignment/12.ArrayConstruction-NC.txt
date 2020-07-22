@@ -1,0 +1,89 @@
+import java.util.*;
+// 2-runtime, 2-WA
+
+
+public class Main{
+
+    public static void main(String[] args){
+
+        Scanner scan = new Scanner(System.in);
+
+        
+
+            int size = scan.nextInt();
+
+            int newSize = 0,e=0,o=0;
+
+            int[] odd = new int[size];
+
+            int[] even = new int[size];
+
+            
+
+            for(int j=0;j<size;j++){
+
+                odd[j] = scan.nextInt();
+
+                
+
+            }
+
+            for(int j=0;j<size;j++){
+
+                even[j] = scan.nextInt();
+
+                newSize += even[j]; 
+
+                
+
+            }
+
+
+
+            int[] temp = new int[newSize];
+
+            int n = 0,b=0;
+
+            while(n<even.length){
+
+                for(int a=0;a<even[n];a++){
+
+                    temp[b] = odd[n];
+
+                    b++;
+
+                }
+
+                n++;
+
+            }
+
+            
+
+
+
+
+
+            int num = scan.nextInt();
+
+            if(num<=0){
+
+                System.out.print(odd[0]);    
+
+            } else if(num>size-1){
+
+                System.out.print(odd[size-1]);
+
+            } else{
+
+                System.out.print(odd[num-1]);
+
+            }
+
+            
+
+        
+
+    }
+
+}

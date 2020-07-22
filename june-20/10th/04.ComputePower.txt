@@ -1,0 +1,21 @@
+static int RecursivePower(int n,int p)
+
+{
+
+      // Your code here
+
+      int i=1;
+
+      int total = 1;
+
+      while(i<=p){
+
+            total *= n; 
+
+            i++;
+
+      }
+
+      return total;
+
+}

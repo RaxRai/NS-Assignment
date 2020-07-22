@@ -1,0 +1,405 @@
+import java.util.*;
+
+
+
+public class Main{
+
+    public static void main(String[] args){
+
+        Scanner scan = new Scanner(System.in);
+
+
+
+        String phrase1 = scan.next();
+
+        String phrase2 = scan.next();
+
+        int[] ph1 = new int[26];
+
+        int[] ph2 = new int[26];
+
+        
+
+        
+
+        if(phrase1.length()==phrase2.length()){
+
+            for(int i=0; i<phrase1.length(); i++){
+
+                switch (phrase1.charAt(i)){
+
+                    case 'a' :
+
+                        ph1[0] += 1;
+
+                        break;
+
+                    case 'b' :
+
+                        ph1[1] += 1;
+
+                        break;
+
+                    case 'c' :
+
+                        ph1[2] += 1;
+
+                        break;
+
+                    case 'd' :
+
+                        ph1[3] += 1;
+
+                        break;
+
+                    case 'e' :
+
+                        ph1[4] += 1;
+
+                        break;
+
+                    case 'f' :
+
+                        ph1[5] += 1;
+
+                        break;
+
+                    case 'g' :
+
+                        ph1[6] += 1;
+
+                        break;
+
+                    case 'h' :
+
+                        ph1[7] += 1;
+
+                        break;
+
+                    case 'i' :
+
+                        ph1[8] += 1;
+
+                        break;
+
+                    case 'j' :
+
+                        ph1[9] += 1;
+
+                        break;
+
+                    case 'k' :
+
+                        ph1[10] += 1;
+
+                        break;
+
+                    case 'l' :
+
+                        ph1[11] += 1;
+
+                        break;
+
+                    case 'm' :
+
+                        ph1[12] += 1;
+
+                        break;
+
+                    case 'n' :
+
+                        ph1[13] += 1;
+
+                        break;
+
+                    case 'o' :
+
+                        ph1[14] += 1;
+
+                        break;
+
+                    case 'p' :
+
+                        ph1[15] += 1;
+
+                        break;
+
+                    case 'q' :
+
+                        ph1[16] += 1;
+
+                        break;
+
+                    case 'r' :
+
+                        ph1[17] += 1;
+
+                        break;
+
+                    case 's' :
+
+                        ph1[18] += 1;
+
+                        break;
+
+                    case 't' :
+
+                        ph1[19] += 1;
+
+                        break;
+
+                    case 'u' :
+
+                        ph1[20] += 1;
+
+                        break;
+
+                    case 'v' :
+
+                        ph1[21] += 1;
+
+                        break;
+
+                    case 'w' :
+
+                        ph1[22] += 1;
+
+                        break;
+
+                    case 'x' :
+
+                        ph1[23] += 1;
+
+                        break;
+
+                    case 'y' :
+
+                        ph1[24] += 1;
+
+                        break;
+
+                    case 'z' :
+
+                        ph1[25] += 1;
+
+                        break;
+
+
+
+                }
+
+                switch (phrase2.charAt(i)){
+
+                    case 'a' :
+
+                        ph2[0] += 1;
+
+                        break;
+
+                    case 'b' :
+
+                        ph2[1] += 1;
+
+                        break;
+
+                    case 'c' :
+
+                        ph2[2] += 1;
+
+                        break;
+
+                    case 'd' :
+
+                        ph2[3] += 1;
+
+                        break;
+
+                    case 'e' :
+
+                        ph2[4] += 1;
+
+                        break;
+
+                    case 'f' :
+
+                        ph2[5] += 1;
+
+                        break;
+
+                    case 'g' :
+
+                        ph2[6] += 1;
+
+                        break;
+
+                    case 'h' :
+
+                        ph2[7] += 1;
+
+                        break;
+
+                    case 'i' :
+
+                        ph2[8] += 1;
+
+                        break;
+
+                    case 'j' :
+
+                        ph2[9] += 1;
+
+                        break;
+
+                    case 'k' :
+
+                        ph2[10] += 1;
+
+                        break;
+
+                    case 'l' :
+
+                        ph2[11] += 1;
+
+                        break;
+
+                    case 'm' :
+
+                        ph2[12] += 1;
+
+                        break;
+
+                    case 'n' :
+
+                        ph2[13] += 1;
+
+                        break;
+
+                    case 'o' :
+
+                        ph2[14] += 1;
+
+                        break;
+
+                    case 'p' :
+
+                        ph2[15] += 1;
+
+                        break;
+
+                    case 'q' :
+
+                        ph2[16] += 1;
+
+                        break;
+
+                    case 'r' :
+
+                        ph2[17] += 1;
+
+                        break;
+
+                    case 's' :
+
+                        ph2[18] += 1;
+
+                        break;
+
+                    case 't' :
+
+                        ph2[19] += 1;
+
+                        break;
+
+                    case 'u' :
+
+                        ph2[20] += 1;
+
+                        break;
+
+                    case 'v' :
+
+                        ph2[21] += 1;
+
+                        break;
+
+                    case 'w' :
+
+                        ph2[22] += 1;
+
+                        break;
+
+                    case 'x' :
+
+                        ph2[23] += 1;
+
+                        break;
+
+                    case 'y' :
+
+                        ph2[24] += 1;
+
+                        break;
+
+                    case 'z' :
+
+                        ph2[25] += 1;
+
+                        break;
+
+
+
+                }
+
+            }
+
+             int count = 0;
+
+            for(int i =0; i<26;i++){
+
+                if(ph1[i] == ph2[i]){
+
+                    count++;
+
+                    continue;
+
+                } else {
+
+                    break;
+
+                }
+
+            }
+
+            if(count>=26){
+
+                System.out.print("YES");
+
+            } else {
+
+                System.out.print("NO");
+
+            }
+
+        } else {
+
+            System.out.print("NO");
+
+        }
+
+    //    System.out.println( Arrays.toString( ph1 ));
+
+    //    System.out.println( Arrays.toString( ph2 ));
+
+       
+
+        
+
+        
+
+        
+
+
+
+    }
+
+}

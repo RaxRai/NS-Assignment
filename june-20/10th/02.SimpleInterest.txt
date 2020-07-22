@@ -1,0 +1,11 @@
+static int SimpleInterest(int P, int R, int Tm){
+
+//enter your code here
+
+    int temp=P*Tm*R;
+
+    int si=(int) temp/100;
+
+    return si;
+
+}

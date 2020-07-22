@@ -1,0 +1,69 @@
+import java.util.Scanner;
+
+public class Main{
+
+    public static void main(String[] args){
+
+        Scanner scan = new Scanner(System.in);
+
+
+
+        int num = scan.nextInt();
+
+        int check = 0;
+
+        int a=0;
+
+
+
+        for(int i=1; i<num; i++){
+
+            check = 0;
+
+            int temp=i;
+
+            //System.out.println(temp);
+
+            while(temp>0){
+
+                //System.out.println("temp before: " + temp);
+
+                a=temp%10;
+
+                check = check + (a * a * a);
+
+                temp=temp/10;
+
+                // System.out.println("temp after: " + temp);
+
+                // System.out.println("Check: " + check);
+
+
+
+            }
+
+            // System.out.println("index after while: " + i);
+
+            // System.out.println("temp after while: " + temp);
+
+            // System.out.println("check after while: " + check);
+
+            // System.out.println("num after while: " + num);
+
+           
+
+            if(check==i){
+
+                System.out.print(check + " ");
+
+            }
+
+            check=0;
+
+            
+
+        }
+
+    }
+
+}

@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+
+
+public class Main{
+
+    public static void main(String[] args){
+
+        Scanner scan = new Scanner(System.in);
+
+        int test = scan.nextInt();
+
+        int num;
+
+        for(int i=0; i<test; i++){
+
+            num = scan.nextInt();
+
+            if(num==1) System.out.println("6");
+
+            if(num==2) System.out.println("5");
+
+            if(num==3) System.out.println("4");
+
+            if(num==6) System.out.println("1");
+
+            if(num==4) System.out.println("3");
+
+            if(num==5) System.out.println("2");
+
+
+
+            
+
+        }
+
+    }
+
+}

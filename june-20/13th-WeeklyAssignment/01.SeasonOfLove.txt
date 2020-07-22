@@ -1,0 +1,17 @@
+import java.util.*;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+        int roses = scan.nextInt();
+        if(roses==1){
+            System.out.print(0);
+        } else {
+            roses = roses - 2;
+            int num = 1;
+            num = num + roses/3;
+            System.out.println(num);
+        }
+        
+    }
+}

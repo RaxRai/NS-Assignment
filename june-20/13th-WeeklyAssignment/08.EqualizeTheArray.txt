@@ -1,0 +1,42 @@
+import java.util.*;
+// 2-TLE
+public class Main{
+    public static void main(String[] argv){
+        Scanner scan = new Scanner(System.in);
+
+        int size = scan.nextInt();
+        int[] arr = new int[size];
+        int even=0, odd=0 , max=0;
+        
+        int eqMax = 0;
+
+        for(int i=0; i<size; i++){
+            arr[i] = scan.nextInt();
+            if(arr[i]%2==0){
+                even++;
+            } else{
+                odd++;
+            }
+        }
+        if(even>odd){
+            max=even;
+        } else{
+            max=odd;
+        }
+        
+
+        for(int i=0; i<size; i++){
+            int eqC = 0;
+            for(int j=0; j<size; j++){
+                if(arr[i] == arr[j]){
+                    eqC++;
+                }
+            }
+            if(eqC > eqMax){
+                eqMax = eqC;
+            }
+        }
+
+        System.out.print( max >= eqMax ? max : eqMax);
+    }
+}

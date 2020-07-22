@@ -1,0 +1,15 @@
+static int NthGP(int A, int R, int N){
+
+//Enter your code here
+
+    int temp = A;
+
+    for(int i=1; i<N; i++){
+
+        temp *= R;
+
+    }
+
+    return temp;
+
+}

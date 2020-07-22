@@ -1,0 +1,43 @@
+static boolean EqualOrNot(int h1, int h2, int v1,int v2){
+
+//Enter your code here
+
+    int gian=h1;
+
+    int suneo=h2;
+
+    int lightOfGian=v1;
+
+    int lightOfSuneo=v2;
+
+
+
+    while(true){
+
+        gian += lightOfGian;
+
+        suneo += lightOfSuneo;
+
+        //System.out.println("gian: " + gian);
+
+        //System.out.println("suneo: " + suneo);
+
+        if(gian==suneo){
+
+            return true;
+
+        } else if(suneo>gian){
+
+            return false;
+
+        }
+
+        
+
+    }
+
+
+
+    
+
+}

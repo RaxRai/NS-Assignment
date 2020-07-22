@@ -1,0 +1,28 @@
+import java.util.*;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+        int testCase = scan.nextInt();
+        int[] arr = new int[testCase];
+        int[] newArr = new int[testCase/2];
+        int sum = 0;
+        int oddSum = 0;
+        int j = 0;
+
+        for(int i=0;i<testCase;i++){
+            arr[i] = scan.nextInt();
+            sum += arr[i];
+            if((i+1)%2==0){
+                newArr[j] = sum;
+                j++;
+                sum = 0;
+            }
+       }
+    
+        for(int i=0; i<newArr.length; i++){
+            System.out.print(newArr[i] + " ");
+        }
+        //System.out.print(Arrays.toString(newArr));
+    }
+}

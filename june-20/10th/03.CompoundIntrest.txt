@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public class Main{
+
+    public static void main(String[] args){
+
+        Scanner scan = new Scanner(System.in);
+
+        double p = scan.nextDouble();
+
+        double r = scan.nextDouble();
+
+        double time = scan.nextDouble();
+
+        r = (1+r/100);
+
+        int i=0;
+
+        double sum = 1;
+
+        while(i<time){
+
+            sum = sum * r;
+
+            i++;
+
+
+
+        }
+
+
+
+        double amount = p*sum;
+
+        double intrest = amount-p;
+
+        System.out.format("%.2f", intrest);
+
+    }
+
+}

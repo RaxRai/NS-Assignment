@@ -1,0 +1,68 @@
+import java.util.*;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+        int testCases = scan.nextInt();
+        
+        
+        for(int i=0;i<testCases;i++){
+            int size = scan.nextInt();
+            int newSize = 0,e=0,o=0;
+            int[] arr = new int[size];
+            int[] odd = new int[size/2];
+            int[] even = new int[size/2];
+            
+            for(int j=0;j<size;j++){
+                arr[j] = scan.nextInt();
+                if(j%2==0){
+                    newSize += arr[j];
+                    even[e] = arr[j];
+                    e++;
+                } else{
+                    odd[o] = arr[j];
+                    o++;
+                }
+            }
+            // 2nd approach
+
+            int[] temp = new int[newSize];
+            int n = 0,b=0;
+            while(n<even.length){
+                for(int a=0;a<even[n];a++){
+                    temp[b] = odd[n];
+                    b++;
+                }
+                n++;
+            }
+
+            // printing output 
+            for(int l = 0; l<temp.length;l++){
+                System.out.print(temp[l] + " ");
+            }
+            System.out.print("\n");
+            // System.out.println(Arrays.toString(odd));
+            // System.out.println(Arrays.toString(even));
+            // System.out.println(Arrays.toString(temp));
+            
+            // 1st approach - Status Failed
+            // //System.out.println("newSize " + newSize);
+            // int[] temp = new int[newSize];
+            // int n = 0;           
+            // for(int k=0; k<newSize;k++){
+                
+            //     if(k%2!=0){
+            //         for(int m=1;m<=arr[k-1];m++){
+            //             temp[n] = arr[k];
+            //             n++;
+            //         }
+            //     }
+               
+            //     //System.out.println(k);
+            // }
+            
+            // System.out.println(Arrays.toString(arr));
+            // System.out.println(Arrays.toString(temp));
+        }
+    }
+}

@@ -1,0 +1,36 @@
+import java.util.*;
+
+public class Main{
+    public static void main(String[] args){
+
+        Scanner scan = new Scanner(System.in);
+
+        int test = scan.nextInt();
+        int num1 = 0;
+        int num2 = 0;
+
+        while(test-- > 0){
+            int N = scan.nextInt();
+            int[] arr = new int[N];
+            int[] temp = new int[N];
+            int sum = 0;
+            for(int i = 0; i < N; i++){
+                arr[i] = scan.nextInt();
+                
+                if(temp[arr[i]-1]==0)
+                    temp[arr[i]-1]=1;
+                else
+                    num1 = arr[i];
+
+                sum += arr[i];
+            }
+
+            
+            int total = N * (N+1)/2;
+
+            num2 = total-(sum-num1);
+            System.out.println(num1+" "+num2);
+
+        }
+    }
+}

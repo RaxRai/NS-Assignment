@@ -1,0 +1,28 @@
+import java.util.*;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+        int testCase = scan.nextInt();
+        long[] arr = new long[testCase];
+        long[] newArr = new long[testCase/2];
+        long multiple = 1L;
+
+        int j = 0;
+
+        for(int i=0;i<testCase;i++){
+            arr[i] = scan.nextLong();
+            multiple *= arr[i];
+            if((i+1)%2==0){
+                newArr[j] = multiple;
+                j++;
+                multiple = 1;
+            }
+       }
+    
+        for(int i=0; i<newArr.length; i++){
+            System.out.print(newArr[i] + " ");
+        }
+        //System.out.print(Arrays.toString(newArr));
+    }
+}

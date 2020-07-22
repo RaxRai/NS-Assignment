@@ -1,0 +1,59 @@
+import java.util.*;
+
+
+
+public class Main{
+
+    public static void main(String[] args){
+
+        Scanner scan = new Scanner(System.in);
+
+
+
+        String subString = scan.next();
+
+        String superString = scan.next();
+
+        int i=0,j=0,check=0;
+
+        for(i=0; i<superString.length(); i++){
+
+            //System.out.println(superString.charAt(i));
+
+
+
+            if(superString.charAt(i)==subString.charAt(j)){
+
+                j++;
+
+                if(j==subString.length()){
+
+                    System.out.println("Yes");
+
+                    check=1;
+
+                    break;
+
+                }
+
+            } else {
+
+                i =  i-j;
+
+                j = 0;
+
+            }
+
+        }
+
+        if(check == 0)
+
+        System.out.println("No");
+
+
+
+        //System.out.print(subString + " " + superString);
+
+    }
+
+}
